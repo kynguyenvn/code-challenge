@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0f1020;
+  --color-card: #181a33;
+  --color-field: #20233f;
+  --color-line: #2d3158;
+  --color-muted: #8d91b8;
+  --color-accent: #7c5cff;
+  --color-accent2: #31d0aa;
+  --color-danger: #ff6b81;
+}
+
+@layer base {
+  body {
+    min-width: 360px;
+    min-height: 100vh;
+    color: #f1f2fb;
+    color-scheme: dark;
+    background:
+      radial-gradient(600px 400px at 15% 10%, rgba(124, 92, 255, 0.25), transparent),
+      radial-gradient(600px 400px at 85% 90%, rgba(49, 208, 170, 0.18), transparent),
+      var(--color-bg);
+  }
+}
